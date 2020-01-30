@@ -1,0 +1,414 @@
+[
+  {
+    "id": "cfb79169.51cc",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "a92cc4a4.e215a8",
+    "type": "mqtt in",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "topic": "M5/Start",
+    "qos": "2",
+    "datatype": "utf8",
+    "broker": "6a927010.30e06",
+    "x": 140,
+    "y": 520,
+    "wires": [["f8bb43d0.51aeb"]]
+  },
+  {
+    "id": "f8bb43d0.51aeb",
+    "type": "mongodb3 in",
+    "z": "cfb79169.51cc",
+    "service": "_ext_",
+    "configNode": "a3656769.4d3e58",
+    "name": "read",
+    "collection": "electric appliance",
+    "operation": "find.toArray",
+    "x": 330,
+    "y": 520,
+    "wires": [["69f63271.5945ac", "308f1144.53c19e"]]
+  },
+  {
+    "id": "69f63271.5945ac",
+    "type": "debug",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 490,
+    "y": 460,
+    "wires": []
+  },
+  {
+    "id": "308f1144.53c19e",
+    "type": "function",
+    "z": "cfb79169.51cc",
+    "name": "send to M5",
+    "func": "\nmsg.payload={\n    \"air\":msg.payload[0],\n    \"fan\":msg.payload[1],\n    \"light1\":msg.payload[2],\n    \"light2\":msg.payload[3],\n    \"light3\":msg.payload[4],\n}\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 490,
+    "y": 520,
+    "wires": [["27d6b8fe.379838", "e1d63778.6f4538"]]
+  },
+  {
+    "id": "27d6b8fe.379838",
+    "type": "debug",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 710,
+    "y": 460,
+    "wires": []
+  },
+  {
+    "id": "7a282cdb.68f554",
+    "type": "debug",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 970,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "e1d63778.6f4538",
+    "type": "split",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "splt": "\\n",
+    "spltType": "str",
+    "arraySplt": 1,
+    "arraySpltType": "len",
+    "stream": false,
+    "addname": "",
+    "x": 690,
+    "y": 520,
+    "wires": [["7a282cdb.68f554", "dc894a8f.11b088"]]
+  },
+  {
+    "id": "dc894a8f.11b088",
+    "type": "switch",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "property": "payload.name",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "air",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "fan",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "light1",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "light2",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "light3",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 5,
+    "x": 950,
+    "y": 520,
+    "wires": [
+      ["5d0e0aa6.b6abf4"],
+      ["4da340e2.aaa3d"],
+      ["720a6fc6.ce4fe"],
+      ["1027c860.0dc998"],
+      ["1e2018f8.fcfcc7"]
+    ]
+  },
+  {
+    "id": "4da340e2.aaa3d",
+    "type": "change",
+    "z": "cfb79169.51cc",
+    "name": "fan rule",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload._id",
+        "pt": "msg"
+      },
+      {
+        "t": "delete",
+        "p": "payload.name",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1240,
+    "y": 480,
+    "wires": [["867c645.56b7998"]]
+  },
+  {
+    "id": "720a6fc6.ce4fe",
+    "type": "change",
+    "z": "cfb79169.51cc",
+    "name": "light1 rule",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload._id",
+        "pt": "msg"
+      },
+      {
+        "t": "delete",
+        "p": "payload.name",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1240,
+    "y": 520,
+    "wires": [["e8e52e4.516c5d"]]
+  },
+  {
+    "id": "1027c860.0dc998",
+    "type": "change",
+    "z": "cfb79169.51cc",
+    "name": "light2 rule",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload._id",
+        "pt": "msg"
+      },
+      {
+        "t": "delete",
+        "p": "payload.name",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1240,
+    "y": 560,
+    "wires": [["bac09b78.9758b8"]]
+  },
+  {
+    "id": "1e2018f8.fcfcc7",
+    "type": "change",
+    "z": "cfb79169.51cc",
+    "name": "light3 rule",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload._id",
+        "pt": "msg"
+      },
+      {
+        "t": "delete",
+        "p": "payload.name",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1240,
+    "y": 600,
+    "wires": [["6ea255b6.6ae9ec"]]
+  },
+  {
+    "id": "5d0e0aa6.b6abf4",
+    "type": "change",
+    "z": "cfb79169.51cc",
+    "name": "air rule",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload._id",
+        "pt": "msg"
+      },
+      {
+        "t": "delete",
+        "p": "payload.name",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1230,
+    "y": 440,
+    "wires": [["77465669.598508", "55225d03.2cd164"]]
+  },
+  {
+    "id": "77465669.598508",
+    "type": "mqtt out",
+    "z": "cfb79169.51cc",
+    "name": "control AIR",
+    "topic": "Node/air",
+    "qos": "",
+    "retain": "",
+    "broker": "bd6355eb.c55698",
+    "x": 1530,
+    "y": 440,
+    "wires": []
+  },
+  {
+    "id": "867c645.56b7998",
+    "type": "mqtt out",
+    "z": "cfb79169.51cc",
+    "name": "control FAN",
+    "topic": "Node/fan",
+    "qos": "2",
+    "retain": "",
+    "broker": "bd6355eb.c55698",
+    "x": 1530,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "e8e52e4.516c5d",
+    "type": "mqtt out",
+    "z": "cfb79169.51cc",
+    "name": "control light1 Color",
+    "topic": "Node/light1",
+    "qos": "",
+    "retain": "",
+    "broker": "bd6355eb.c55698",
+    "x": 1550,
+    "y": 520,
+    "wires": []
+  },
+  {
+    "id": "bac09b78.9758b8",
+    "type": "mqtt out",
+    "z": "cfb79169.51cc",
+    "name": "control light2 Color",
+    "topic": "Node/light2",
+    "qos": "",
+    "retain": "",
+    "broker": "bd6355eb.c55698",
+    "x": 1550,
+    "y": 560,
+    "wires": []
+  },
+  {
+    "id": "6ea255b6.6ae9ec",
+    "type": "mqtt out",
+    "z": "cfb79169.51cc",
+    "name": "control light3 Color",
+    "topic": "Node/light3",
+    "qos": "",
+    "retain": "",
+    "broker": "bd6355eb.c55698",
+    "x": 1550,
+    "y": 600,
+    "wires": []
+  },
+  {
+    "id": "55225d03.2cd164",
+    "type": "debug",
+    "z": "cfb79169.51cc",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 1530,
+    "y": 360,
+    "wires": []
+  },
+  {
+    "id": "6a927010.30e06",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "Local Host Mqtt",
+    "broker": "localhost",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "a3656769.4d3e58",
+    "type": "mongodb3",
+    "z": "",
+    "uri": "",
+    "name": "",
+    "options": "",
+    "parallelism": "-1"
+  },
+  {
+    "id": "bd6355eb.c55698",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "Local Host Mqtt",
+    "broker": "localhost",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  }
+]

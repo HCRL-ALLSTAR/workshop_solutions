@@ -1,0 +1,25 @@
+[
+  {
+    "id": "106afc29.3c3484",
+    "type": "mongodb3 in",
+    "z": "cfb79169.51cc",
+    "service": "_ext_",
+    "configNode": "a3656769.4d3e58",
+    "name": "push env",
+    "collection": "env",
+    "operation": "insertOne",
+    "x": 755,
+    "y": 340,
+    "wires": [[]],
+    "l": false
+  },
+  {
+    "id": "a3656769.4d3e58",
+    "type": "mongodb3",
+    "z": "",
+    "uri": "",
+    "name": "",
+    "options": "",
+    "parallelism": "-1"
+  }
+]

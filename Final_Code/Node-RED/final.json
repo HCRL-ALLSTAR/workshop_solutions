@@ -1,0 +1,3572 @@
+[
+    {
+        "id": "2dbed26e.b06b9e",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "40e12db2.90c0f4",
+        "type": "tab",
+        "label": "MQTT Broker",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b875f491.2f05f8",
+        "type": "tab",
+        "label": "MongoDB connection",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6a927010.30e06",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Local Host Mqtt",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f2f849b1.230a08",
+        "type": "ui_group",
+        "z": "",
+        "name": "ENVIRONMENT",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "19c2e904.377677",
+        "type": "ui_group",
+        "z": "",
+        "name": "AIR",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "8019fc7.6e943",
+        "type": "ui_group",
+        "z": "",
+        "name": "FAN",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4ad224.130d2ddc",
+        "type": "ui_group",
+        "z": "",
+        "name": "PIR",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a530855b.5268a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "LIGHT",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fc954eb3.e2016",
+        "type": "ui_group",
+        "z": "",
+        "name": "Color light 1",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5966569.68dffa8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#2525a9",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#2525a9",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2525a9",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4444d6",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#2525a9",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 3,
+                "gy": 3,
+                "cx": 3,
+                "cy": 3,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bd6355eb.c55698",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Local Host Mqtt",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "a8edd420.888408",
+        "type": "ui_group",
+        "z": "",
+        "name": "ENVIRONMENT",
+        "tab": "e2a41ba8.88cee8",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false
+    },
+    {
+        "id": "1b001c1e.022e54",
+        "type": "ui_group",
+        "z": "",
+        "name": "AIR",
+        "tab": "e2a41ba8.88cee8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d6c84eca.74f5b",
+        "type": "ui_group",
+        "z": "",
+        "name": "FAN",
+        "tab": "e2a41ba8.88cee8",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false
+    },
+    {
+        "id": "e39c745c.c4e438",
+        "type": "ui_group",
+        "z": "",
+        "name": "PIR",
+        "tab": "e2a41ba8.88cee8",
+        "order": 4,
+        "disp": true,
+        "width": 2,
+        "collapse": false
+    },
+    {
+        "id": "5e8c30d8.51957",
+        "type": "ui_group",
+        "z": "",
+        "name": "LIGHT 1",
+        "tab": "e2a41ba8.88cee8",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": true
+    },
+    {
+        "id": "e2a41ba8.88cee8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "R O O M - MAIN",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false,
+        "info": "<!--<!doctype html>-->\r\n<!--<html>-->\r\n<!--  <head>-->\r\n    <!-- Place your kit's code here -->\r\n<!--    <script src=\"https://kit.fontawesome.com/e71b471599.js\" crossorigin=\"anonymous\"></script>-->\r\n<!--  </head>-->\r\n\r\n<!--  <body>-->\r\n<!--    <i class=\"fa fa-level-up\" aria-hidden=\"true\"></i>-->\r\n<!--    <i class=\"fa fa-level-down\" aria-hidden=\"true\"></i>-->\r\n<!--  </body>-->\r\n<!--</html>-->"
+    },
+    {
+        "id": "a3656769.4d3e58",
+        "type": "mongodb3",
+        "z": "",
+        "uri": "",
+        "name": "",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "fc61562b.0503d8",
+        "type": "linetoken",
+        "z": "",
+        "name": "Checker"
+    },
+    {
+        "id": "aaa458ee.76d258",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "681d89aa.b309e8",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b47d9473.d0e3e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "681d89aa.b309e8",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f28a4dd8.b491b",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "681d89aa.b309e8",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2a2e09e6.e1bd06",
+        "type": "linetoken",
+        "z": "",
+        "name": ""
+    },
+    {
+        "id": "7f85217b.4b6c",
+        "type": "ui_group",
+        "z": "",
+        "name": "LIGHT 2",
+        "tab": "e2a41ba8.88cee8",
+        "order": 6,
+        "disp": true,
+        "width": 4,
+        "collapse": true
+    },
+    {
+        "id": "ecdedfc8.c867e",
+        "type": "ui_group",
+        "z": "",
+        "name": "LIGHT 3",
+        "tab": "e2a41ba8.88cee8",
+        "order": 7,
+        "disp": true,
+        "width": 4,
+        "collapse": true
+    },
+    {
+        "id": "81564a09.4dfd08",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "1b001c1e.022e54",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e81ca11.d844e6",
+        "type": "ui_group",
+        "z": "",
+        "name": "RGB Strip ON/OFF",
+        "tab": "e2a41ba8.88cee8",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "59a7e7a6.e2b998",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/env",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "2b15f893.597a08",
+                "a23c003e.59a64",
+                "75a041f9.9e5b9"
+            ]
+        ]
+    },
+    {
+        "id": "93dff252.24c7a",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/air",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "d5f9aca5.50f21",
+                "a863fce2.459f3",
+                "1c0b339.8f8a7cc"
+            ]
+        ]
+    },
+    {
+        "id": "f583d680.01c948",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/fan",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "667039f.8ca5bc8"
+            ]
+        ]
+    },
+    {
+        "id": "97d457e3.78ad58",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/pir",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "5e46b47f.4d828c",
+                "23cf5981.373d06"
+            ]
+        ]
+    },
+    {
+        "id": "2b15f893.597a08",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "TEMP",
+        "func": "msg.payload = msg.payload.temp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 60,
+        "wires": [
+            [
+                "57502b02.40b1f4"
+            ]
+        ]
+    },
+    {
+        "id": "a23c003e.59a64",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "HUMI",
+        "func": "msg.payload = msg.payload.humi;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "8a07a752.65b1d8"
+            ]
+        ]
+    },
+    {
+        "id": "75a041f9.9e5b9",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "Pressure",
+        "func": "msg.payload = (msg.payload.pres/100000).toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "d6d3da1.6851b28"
+            ]
+        ]
+    },
+    {
+        "id": "57502b02.40b1f4",
+        "type": "ui_gauge",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "group": "a8edd420.888408",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "gtype": "donut",
+        "title": "อุณหภูมิห้อง",
+        "label": "celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#1ae8ff",
+            "#bd00e6",
+            "#ff0209"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 540,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8a07a752.65b1d8",
+        "type": "ui_gauge",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "group": "a8edd420.888408",
+        "order": 3,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "ความชื้น",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#47696d",
+            "#4492a2",
+            "#21c4e0"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 530,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d6d3da1.6851b28",
+        "type": "ui_gauge",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "group": "a8edd420.888408",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "ความกดอากาศ",
+        "label": "bar",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2",
+        "colors": [
+            "#9fffab",
+            "#0ce600",
+            "#008006"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d5f9aca5.50f21",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "msg.payload = msg.payload.st;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [
+                "a2048dbf.9bc1a"
+            ]
+        ]
+    },
+    {
+        "id": "a863fce2.459f3",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "TEMP",
+        "func": "msg.payload = msg.payload.temp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "91d757c.3dd89a8"
+            ]
+        ]
+    },
+    {
+        "id": "a2048dbf.9bc1a",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "เปิด/ปิด",
+        "tooltip": "",
+        "group": "1b001c1e.022e54",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-bullseye",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-bullseye",
+        "offcolor": "#FF3333",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "dc4ca2e7.2b10c"
+            ]
+        ]
+    },
+    {
+        "id": "dcbd610.4b78ba",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "control AIR",
+        "topic": "Node/air",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1130,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "dc4ca2e7.2b10c",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "check",
+        "func": "if(msg.payload !== 1){\n    msg.payload = {st: 0};\n}else{\n    msg.payload = {st: 1};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "d09d5168.8ea74"
+            ]
+        ]
+    },
+    {
+        "id": "667039f.8ca5bc8",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "LEVEL",
+        "func": "msg.payload = msg.payload.lv;\n// if(msg.payload === 0){\n//     msg.payload = 0;\n// }\n// else if(msg.payload === 1){\n//     msg.payload = 1;\n// }else if(msg.payload === 2){\n//     msg.payload = 2;\n// }\n// else if(msg.payload === 3){\n//     msg.payload = 3;\n// }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "58381194.c407e"
+            ]
+        ]
+    },
+    {
+        "id": "58381194.c407e",
+        "type": "ui_dropdown",
+        "z": "2dbed26e.b06b9e",
+        "name": "[ FAN LEVEL ]",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d6c84eca.74f5b",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "options": [
+            {
+                "label": "0",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "1",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "2",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "3",
+                "value": 3,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Node/fan",
+        "x": 580,
+        "y": 680,
+        "wires": [
+            [
+                "635c0aff.6d7a74"
+            ]
+        ]
+    },
+    {
+        "id": "635c0aff.6d7a74",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "msg.payload = {st: msg.payload};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 770,
+        "y": 680,
+        "wires": [
+            [
+                "63876205.3b2d3c"
+            ]
+        ]
+    },
+    {
+        "id": "63876205.3b2d3c",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "control FAN",
+        "topic": "Node/fan",
+        "qos": "2",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1010,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5e46b47f.4d828c",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "msg.payload = msg.payload.st;\nif(msg.payload === 0){\n    msg.payload = 0;\n}\nelse if(msg.payload === 1){\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "53bf0e02.b5a04"
+            ]
+        ]
+    },
+    {
+        "id": "5683bbcd.dc2484",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/light1",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 120,
+        "y": 860,
+        "wires": [
+            [
+                "83468877.af9238"
+            ]
+        ]
+    },
+    {
+        "id": "83468877.af9238",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "global.set('st1',msg.payload.st);\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 860,
+        "wires": [
+            [
+                "91145c21.365e7",
+                "8f617773.21d6d8",
+                "2657bf66.dae5b",
+                "187e5de1.245fd2"
+            ]
+        ]
+    },
+    {
+        "id": "c3b0ae2d.283df",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "เปิด/ปิด",
+        "tooltip": "",
+        "group": "5e8c30d8.51957",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-bullseye",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-bullseye",
+        "offcolor": "#FF3333",
+        "x": 670,
+        "y": 800,
+        "wires": [
+            [
+                "351eccec.9c7724"
+            ]
+        ]
+    },
+    {
+        "id": "351eccec.9c7724",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('st1',msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 800,
+        "wires": [
+            [
+                "dc4272ff.f0724"
+            ]
+        ]
+    },
+    {
+        "id": "8f33daf3.ac52f8",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "RED",
+        "tooltip": "",
+        "group": "5e8c30d8.51957",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 880,
+        "wires": [
+            [
+                "c0c79c78.0f094"
+            ]
+        ]
+    },
+    {
+        "id": "f967b286.9c8ba",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "GREEN",
+        "tooltip": "",
+        "group": "5e8c30d8.51957",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 660,
+        "y": 840,
+        "wires": [
+            [
+                "4c990e05.429f7"
+            ]
+        ]
+    },
+    {
+        "id": "b7b90784.22f0b8",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "BLUE",
+        "tooltip": "",
+        "group": "5e8c30d8.51957",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 920,
+        "wires": [
+            [
+                "e63808d4.e78168"
+            ]
+        ]
+    },
+    {
+        "id": "4c990e05.429f7",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('g1',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 840,
+        "wires": [
+            [
+                "dc4272ff.f0724"
+            ]
+        ]
+    },
+    {
+        "id": "c0c79c78.0f094",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('r1',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 880,
+        "wires": [
+            [
+                "dc4272ff.f0724"
+            ]
+        ]
+    },
+    {
+        "id": "e63808d4.e78168",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('b1',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 920,
+        "wires": [
+            [
+                "dc4272ff.f0724"
+            ]
+        ]
+    },
+    {
+        "id": "330a56ca.5882da",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "control light1 Color",
+        "topic": "Node/light1",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1250,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7189a7b5.dd9228",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "/test",
+        "qos": "",
+        "retain": "",
+        "broker": "6a927010.30e06",
+        "x": 1290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8abdccc6.95af6",
+        "type": "mosca in",
+        "z": "40e12db2.90c0f4",
+        "mqtt_port": 1883,
+        "mqtt_ws_port": 8080,
+        "name": "",
+        "username": "",
+        "password": "",
+        "dburl": "",
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "91cbe6d6.6e1448"
+            ]
+        ]
+    },
+    {
+        "id": "91cbe6d6.6e1448",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 780,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5cafdd57.2a4d44",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1060,
+        "y": 260,
+        "wires": [
+            [
+                "7189a7b5.dd9228"
+            ]
+        ]
+    },
+    {
+        "id": "a33c5ee3.f5b2a",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "env JSON Schema",
+        "info": "{\n    \"temp\": number,\n    \"humi\": number,\n    \"pressure\":number\n}",
+        "x": 210,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2053ce1b.3fe242",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "air JSON Schema",
+        "info": "{\n    \"st\": boolean,\n    \"temp\" : number\n}",
+        "x": 210,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "467a958a.e40efc",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "fan JSON Schema",
+        "info": "{\n    \"st\": boolean,\n    \"level\": number\n}",
+        "x": 210,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3a9f00ba.32315",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "PIR JSON Schema",
+        "info": "{\n    \"st\": boolean\n}",
+        "x": 210,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "467ff475.ee3e7c",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "light[ 1-3 ] JSON Schema (Pub)",
+        "info": "{\n    \"st\": boolean,\n    \"R\": number,\n    \"G\": number,\n    \"B\": number\n}",
+        "x": 250,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "523c685e.670978",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "light[ 1-3 ] JSON Schema (Sub)",
+        "info": "{\n    \"st\": boolean\n}",
+        "x": 250,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7e535886.e9ab68",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "Subscribe Zone",
+        "info": "",
+        "x": 520,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e8766b3d.bdcfe8",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/light2",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "202800c5.7669c"
+            ]
+        ]
+    },
+    {
+        "id": "202800c5.7669c",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "98e56f61.246b8",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/air",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 490,
+        "y": 500,
+        "wires": [
+            [
+                "861e922d.4aaf1"
+            ]
+        ]
+    },
+    {
+        "id": "861e922d.4aaf1",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "63386afc.23f964",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/fan",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "e2f92e0f.dc4f7"
+            ]
+        ]
+    },
+    {
+        "id": "e2f92e0f.dc4f7",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "abc79654.615d58",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/env",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 492,
+        "y": 650,
+        "wires": [
+            [
+                "8f72238d.0a0ca"
+            ]
+        ]
+    },
+    {
+        "id": "8f72238d.0a0ca",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 772,
+        "y": 650,
+        "wires": []
+    },
+    {
+        "id": "955aa914.a63718",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/pir",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 720,
+        "wires": [
+            [
+                "f2ebee99.c7557"
+            ]
+        ]
+    },
+    {
+        "id": "f2ebee99.c7557",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "238a5020.09bb",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/light3",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "48913b5b.f644f4"
+            ]
+        ]
+    },
+    {
+        "id": "48913b5b.f644f4",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "193d86e5.3472e9",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/light1",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "f7594d4d.f456f"
+            ]
+        ]
+    },
+    {
+        "id": "f7594d4d.f456f",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "66993afe.227d74",
+        "type": "comment",
+        "z": "40e12db2.90c0f4",
+        "name": "Publish Zone",
+        "info": "",
+        "x": 1070,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "62693d5e.dcdc24",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/light2",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "9e2b87dd.fd67f8",
+                "8e3339c3.5c9968"
+            ]
+        ]
+    },
+    {
+        "id": "9e2b87dd.fd67f8",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 470,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "d31d7e5e.ec583",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/air",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 110,
+        "y": 1120,
+        "wires": [
+            [
+                "494d518.3c4c0b",
+                "2250c8df.a9df18"
+            ]
+        ]
+    },
+    {
+        "id": "2250c8df.a9df18",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 470,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "3f77719d.3607ee",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/fan",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 110,
+        "y": 987,
+        "wires": [
+            [
+                "1c498603.c01a2a",
+                "8c2551ac.be8c6"
+            ]
+        ]
+    },
+    {
+        "id": "1c498603.c01a2a",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 470,
+        "y": 987,
+        "wires": []
+    },
+    {
+        "id": "ae73d91a.ec0a58",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/env",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 850,
+        "y": 680,
+        "wires": [
+            [
+                "8fd8787c.352428",
+                "9c15950f.f27568"
+            ]
+        ]
+    },
+    {
+        "id": "8fd8787c.352428",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "27029a0e.2b5496",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/pir",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 860,
+        "y": 560,
+        "wires": [
+            [
+                "a7363420.31cdd8",
+                "d8033397.7c718"
+            ]
+        ]
+    },
+    {
+        "id": "a7363420.31cdd8",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1130,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3c93497a.12bb66",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/light3",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 120,
+        "y": 840,
+        "wires": [
+            [
+                "de21369e.8e88f"
+            ]
+        ]
+    },
+    {
+        "id": "9e29520b.7a9c1",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "6d4aa7a0.749078",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/light1",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "cb8bd872.051cb8",
+                "f692766c.51a8f8"
+            ]
+        ]
+    },
+    {
+        "id": "cb8bd872.051cb8",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 510,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a85fd815.162318",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "update air",
+        "collection": "electric appliance",
+        "operation": "updateOne",
+        "x": 460,
+        "y": 1060,
+        "wires": [
+            [
+                "3b87ca07.2a6076"
+            ]
+        ]
+    },
+    {
+        "id": "29e8b96b.845336",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "update light1",
+        "collection": "electric appliance",
+        "operation": "updateOne",
+        "x": 490,
+        "y": 520,
+        "wires": [
+            [
+                "dabb9ca7.f5a7a"
+            ]
+        ]
+    },
+    {
+        "id": "807228c0.f0c4e8",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "update light3",
+        "collection": "electric appliance",
+        "operation": "updateOne",
+        "x": 510,
+        "y": 780,
+        "wires": [
+            [
+                "932ec198.00bd9"
+            ]
+        ]
+    },
+    {
+        "id": "9c15950f.f27568",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "push env",
+        "collection": "env",
+        "operation": "insertOne",
+        "x": 1075,
+        "y": 620,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "d8033397.7c718",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "push pir",
+        "collection": "pir",
+        "operation": "insertOne",
+        "x": 1120,
+        "y": 500,
+        "wires": [
+            [
+                "a4fb3af1.854d78"
+            ]
+        ]
+    },
+    {
+        "id": "458c41bb.5996c",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "/testPub",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 800,
+        "wires": [
+            [
+                "adbecf55.a7508"
+            ]
+        ]
+    },
+    {
+        "id": "adbecf55.a7508",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f692766c.51a8f8",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "updatel light1",
+        "func": "msg.payload =[{\n    name:\"light1\"\n},{\n    $set:{\n        st:msg.payload.st\n    }\n}]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 520,
+        "wires": [
+            [
+                "29e8b96b.845336"
+            ]
+        ]
+    },
+    {
+        "id": "de21369e.8e88f",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "updatel light3",
+        "func": "msg.payload =[{\n    name:\"light3\"\n},{\n    $set:{\n        st:msg.payload.st\n    }\n}]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 780,
+        "wires": [
+            [
+                "807228c0.f0c4e8",
+                "9e29520b.7a9c1"
+            ]
+        ]
+    },
+    {
+        "id": "91d757c.3dd89a8",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "ปรับอุณหภูมิ",
+        "tooltip": "",
+        "group": "1b001c1e.022e54",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "M5/air",
+        "min": "15",
+        "max": "30",
+        "step": 1,
+        "x": 470,
+        "y": 540,
+        "wires": [
+            [
+                "8a4662d.f22a2a",
+                "35b1b37d.c7e67c"
+            ]
+        ]
+    },
+    {
+        "id": "8a4662d.f22a2a",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "msg.payload = {temp: msg.payload};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 520,
+        "wires": [
+            [
+                "d09d5168.8ea74"
+            ]
+        ]
+    },
+    {
+        "id": "35b1b37d.c7e67c",
+        "type": "ui_gauge",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "group": "1b001c1e.022e54",
+        "order": 3,
+        "width": 2,
+        "height": 2,
+        "gtype": "donut",
+        "title": "Air temp",
+        "label": "celsius",
+        "format": "{{value}}",
+        "min": "15",
+        "max": "30",
+        "colors": [
+            "#0199b4",
+            "#00dae6",
+            "#0235ff"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1c0b339.8f8a7cc",
+        "type": "debug",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 270,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d09d5168.8ea74",
+        "type": "join",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "/light",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "1",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "dcbd610.4b78ba",
+                "31119467.4946ac"
+            ]
+        ]
+    },
+    {
+        "id": "c151edf5.540fa",
+        "type": "mqtt in",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/Start",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "6a927010.30e06",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "fb34b6e4.4983c8"
+            ]
+        ]
+    },
+    {
+        "id": "fb34b6e4.4983c8",
+        "type": "debug",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "23cf5981.373d06",
+        "type": "debug",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 330,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "53bf0e02.b5a04",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "e39c745c.c4e438",
+        "order": 1,
+        "width": 2,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "accessibility",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "accessibility",
+        "offcolor": "#FF3333",
+        "x": 530,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3b9b83f.4aa8f8",
+        "type": "mqtt in",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "M5/Start",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "6a927010.30e06",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "132043ab.19758c"
+            ]
+        ]
+    },
+    {
+        "id": "132043ab.19758c",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "read",
+        "collection": "electric appliance",
+        "operation": "find.toArray",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "6c35ae27.9cdac",
+                "1ab7f124.9b8d5f"
+            ]
+        ]
+    },
+    {
+        "id": "6c35ae27.9cdac",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "494d518.3c4c0b",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "update air",
+        "func": "\nmsg.payload =[{\n    name:\"air\"\n},{\n    $set:{\n        st:msg.payload.st,\n        temp:msg.payload.temp\n    }\n}]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1060,
+        "wires": [
+            [
+                "a85fd815.162318"
+            ]
+        ]
+    },
+    {
+        "id": "3b87ca07.2a6076",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "1ab7f124.9b8d5f",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "send to M5",
+        "func": "\nmsg.payload={\n    \"air\":msg.payload[0],\n    \"fan\":msg.payload[1],\n    \"light1\":msg.payload[2],\n    \"light2\":msg.payload[3],\n    \"light3\":msg.payload[4],\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "1f44c556.3c85db",
+                "d2c1b61b.a70ae8"
+            ]
+        ]
+    },
+    {
+        "id": "1f44c556.3c85db",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8e3339c3.5c9968",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "updatel light2",
+        "func": "msg.payload =[{\n    name:\"light2\"\n},{\n    $set:{\n        st:msg.payload.st\n    }\n}]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 640,
+        "wires": [
+            [
+                "7010e1c1.6897d"
+            ]
+        ]
+    },
+    {
+        "id": "7010e1c1.6897d",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "update light2",
+        "collection": "electric appliance",
+        "operation": "updateOne",
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "653a2c94.e89c64"
+            ]
+        ]
+    },
+    {
+        "id": "8c2551ac.be8c6",
+        "type": "function",
+        "z": "b875f491.2f05f8",
+        "name": "updatel light3",
+        "func": "msg.payload =[{\n    name:\"fan\"\n},{\n    $set:{\n        st:msg.payload.st,\n        lv:msg.payload.lv\n    }\n}]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 927,
+        "wires": [
+            [
+                "d08990f3.c095f"
+            ]
+        ]
+    },
+    {
+        "id": "d08990f3.c095f",
+        "type": "mongodb3 in",
+        "z": "b875f491.2f05f8",
+        "service": "_ext_",
+        "configNode": "a3656769.4d3e58",
+        "name": "update fan",
+        "collection": "electric appliance",
+        "operation": "updateOne",
+        "x": 470,
+        "y": 927,
+        "wires": [
+            [
+                "bc3211eb.929e5"
+            ]
+        ]
+    },
+    {
+        "id": "dabb9ca7.f5a7a",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "932ec198.00bd9",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "bc3211eb.929e5",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 927,
+        "wires": []
+    },
+    {
+        "id": "653a2c94.e89c64",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "12b76da1.891bb2",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 930,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d2c1b61b.a70ae8",
+        "type": "split",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "12b76da1.891bb2",
+                "5fbb513e.76776"
+            ]
+        ]
+    },
+    {
+        "id": "5fbb513e.76776",
+        "type": "switch",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "air",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "fan",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "light1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "light2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "light3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 910,
+        "y": 320,
+        "wires": [
+            [
+                "e6802e8.3df75d"
+            ],
+            [
+                "9da24362.1c7e"
+            ],
+            [
+                "321889ae.164656"
+            ],
+            [
+                "6b98172f.3001f8"
+            ],
+            [
+                "165604a0.97177b"
+            ]
+        ]
+    },
+    {
+        "id": "9da24362.1c7e",
+        "type": "change",
+        "z": "b875f491.2f05f8",
+        "name": "fan rule",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.name",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 280,
+        "wires": [
+            [
+                "90d4d22e.3a42c"
+            ]
+        ]
+    },
+    {
+        "id": "321889ae.164656",
+        "type": "change",
+        "z": "b875f491.2f05f8",
+        "name": "light1 rule",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.name",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 320,
+        "wires": [
+            [
+                "d30d68df.76d0d8"
+            ]
+        ]
+    },
+    {
+        "id": "6b98172f.3001f8",
+        "type": "change",
+        "z": "b875f491.2f05f8",
+        "name": "light2 rule",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.name",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 360,
+        "wires": [
+            [
+                "b94fe32d.77ce"
+            ]
+        ]
+    },
+    {
+        "id": "165604a0.97177b",
+        "type": "change",
+        "z": "b875f491.2f05f8",
+        "name": "light3 rule",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.name",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 400,
+        "wires": [
+            [
+                "9783c05d.15573"
+            ]
+        ]
+    },
+    {
+        "id": "e6802e8.3df75d",
+        "type": "change",
+        "z": "b875f491.2f05f8",
+        "name": "air rule",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.name",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 240,
+        "wires": [
+            [
+                "2c7d0ba1.850684",
+                "d14bc58a.9b9b08"
+            ]
+        ]
+    },
+    {
+        "id": "2c7d0ba1.850684",
+        "type": "mqtt out",
+        "z": "b875f491.2f05f8",
+        "name": "control AIR",
+        "topic": "Node/air",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "90d4d22e.3a42c",
+        "type": "mqtt out",
+        "z": "b875f491.2f05f8",
+        "name": "control FAN",
+        "topic": "Node/fan",
+        "qos": "2",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1490,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d30d68df.76d0d8",
+        "type": "mqtt out",
+        "z": "b875f491.2f05f8",
+        "name": "control light1 Color",
+        "topic": "Node/light1",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1510,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b94fe32d.77ce",
+        "type": "mqtt out",
+        "z": "b875f491.2f05f8",
+        "name": "control light2 Color",
+        "topic": "Node/light2",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1510,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9783c05d.15573",
+        "type": "mqtt out",
+        "z": "b875f491.2f05f8",
+        "name": "control light3 Color",
+        "topic": "Node/light3",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1510,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d14bc58a.9b9b08",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "31119467.4946ac",
+        "type": "link out",
+        "z": "2dbed26e.b06b9e",
+        "name": "Dashboard Air Temp",
+        "links": [
+            "5155b336.ccdc5c",
+            "85d7f42b.c7f2d8"
+        ],
+        "x": 1075,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5155b336.ccdc5c",
+        "type": "link in",
+        "z": "b875f491.2f05f8",
+        "name": "Mongo Air Temp",
+        "links": [
+            "31119467.4946ac",
+            "61b8ed29.c0e3e4"
+        ],
+        "x": 75,
+        "y": 1060,
+        "wires": [
+            [
+                "494d518.3c4c0b",
+                "592d860f.77e188"
+            ]
+        ]
+    },
+    {
+        "id": "a4fb3af1.854d78",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1300,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "dc4272ff.f0724",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "sendOBJ",
+        "func": "ST  = global.get('st1');\ng   =  global.get('g1');\nr   =  global.get('r1');\nb   =  global.get('b1');\n\nmsg.payload = {\n    st:ST,\n    G:g,\n    R:r,\n    B:b,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 860,
+        "wires": [
+            [
+                "330a56ca.5882da"
+            ]
+        ]
+    },
+    {
+        "id": "8f617773.21d6d8",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('g1');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 840,
+        "wires": [
+            [
+                "f967b286.9c8ba"
+            ]
+        ]
+    },
+    {
+        "id": "2657bf66.dae5b",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('r1');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 880,
+        "wires": [
+            [
+                "8f33daf3.ac52f8"
+            ]
+        ]
+    },
+    {
+        "id": "187e5de1.245fd2",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('b1');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 920,
+        "wires": [
+            [
+                "b7b90784.22f0b8"
+            ]
+        ]
+    },
+    {
+        "id": "91145c21.365e7",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('st1');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 800,
+        "wires": [
+            [
+                "c3b0ae2d.283df"
+            ]
+        ]
+    },
+    {
+        "id": "ae2f715f.7dd25",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/light2",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 120,
+        "y": 1100,
+        "wires": [
+            [
+                "cb96ca41.8779e8"
+            ]
+        ]
+    },
+    {
+        "id": "cb96ca41.8779e8",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "global.set('st2',msg.payload.st);\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1100,
+        "wires": [
+            [
+                "3ac643bd.5111cc",
+                "560efb26.1a3344",
+                "ddcb0e98.f028e",
+                "3948d365.e17d3c"
+            ]
+        ]
+    },
+    {
+        "id": "6ee62417.50759c",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "เปิด/ปิด",
+        "tooltip": "",
+        "group": "7f85217b.4b6c",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-bullseye",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-bullseye",
+        "offcolor": "#FF3333",
+        "x": 670,
+        "y": 1040,
+        "wires": [
+            [
+                "c23860ce.cf801"
+            ]
+        ]
+    },
+    {
+        "id": "c23860ce.cf801",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('st2',msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1040,
+        "wires": [
+            [
+                "c7a34485.3c9ba8"
+            ]
+        ]
+    },
+    {
+        "id": "f8e94ea8.75cf",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "RED",
+        "tooltip": "",
+        "group": "7f85217b.4b6c",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 1120,
+        "wires": [
+            [
+                "f05bf5ee.cfdd88"
+            ]
+        ]
+    },
+    {
+        "id": "494e56e7.f57d48",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "GREEN",
+        "tooltip": "",
+        "group": "7f85217b.4b6c",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 660,
+        "y": 1080,
+        "wires": [
+            [
+                "b7983a9d.33e908"
+            ]
+        ]
+    },
+    {
+        "id": "b0a3d002.587d4",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "BLUE",
+        "tooltip": "",
+        "group": "7f85217b.4b6c",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 1160,
+        "wires": [
+            [
+                "8634e584.67dd68"
+            ]
+        ]
+    },
+    {
+        "id": "b7983a9d.33e908",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('g2',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1080,
+        "wires": [
+            [
+                "c7a34485.3c9ba8"
+            ]
+        ]
+    },
+    {
+        "id": "f05bf5ee.cfdd88",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('r2',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1120,
+        "wires": [
+            [
+                "c7a34485.3c9ba8"
+            ]
+        ]
+    },
+    {
+        "id": "8634e584.67dd68",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('b2',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1160,
+        "wires": [
+            [
+                "c7a34485.3c9ba8"
+            ]
+        ]
+    },
+    {
+        "id": "315fceb.f299232",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "control light2 Color",
+        "topic": "Node/light2",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1250,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "c7a34485.3c9ba8",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "sendOBJ",
+        "func": "ST  = global.get('st2');\ng   =  global.get('g2');\nr   =  global.get('r2');\nb   =  global.get('b2');\n\nmsg.payload = {\n    st:ST,\n    G:g,\n    R:r,\n    B:b,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 1100,
+        "wires": [
+            [
+                "315fceb.f299232"
+            ]
+        ]
+    },
+    {
+        "id": "560efb26.1a3344",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('g2');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1080,
+        "wires": [
+            [
+                "494e56e7.f57d48"
+            ]
+        ]
+    },
+    {
+        "id": "ddcb0e98.f028e",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('r2');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1120,
+        "wires": [
+            [
+                "f8e94ea8.75cf"
+            ]
+        ]
+    },
+    {
+        "id": "3948d365.e17d3c",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('b2');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1160,
+        "wires": [
+            [
+                "b0a3d002.587d4"
+            ]
+        ]
+    },
+    {
+        "id": "3ac643bd.5111cc",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('st2');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1040,
+        "wires": [
+            [
+                "6ee62417.50759c"
+            ]
+        ]
+    },
+    {
+        "id": "3c98927e.ef6e3e",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/light3",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 120,
+        "y": 1360,
+        "wires": [
+            [
+                "bd979777.d4f388"
+            ]
+        ]
+    },
+    {
+        "id": "bd979777.d4f388",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "global.set('st3',msg.payload.st);\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1360,
+        "wires": [
+            [
+                "b3b72978.074698",
+                "39b91fb1.f962c",
+                "75b95bdb.636904",
+                "7dd30864.290118"
+            ]
+        ]
+    },
+    {
+        "id": "746299eb.6755f8",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "เปิด/ปิด",
+        "tooltip": "",
+        "group": "ecdedfc8.c867e",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-bullseye",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-bullseye",
+        "offcolor": "#FF3333",
+        "x": 670,
+        "y": 1300,
+        "wires": [
+            [
+                "d9d3be20.73d4f"
+            ]
+        ]
+    },
+    {
+        "id": "d9d3be20.73d4f",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('st3',msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1300,
+        "wires": [
+            [
+                "a16c993b.019d48"
+            ]
+        ]
+    },
+    {
+        "id": "5e5087e8.659cf8",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "RED",
+        "tooltip": "",
+        "group": "ecdedfc8.c867e",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 1380,
+        "wires": [
+            [
+                "de939970.f91018"
+            ]
+        ]
+    },
+    {
+        "id": "89590c1e.2b93",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "GREEN",
+        "tooltip": "",
+        "group": "ecdedfc8.c867e",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 660,
+        "y": 1340,
+        "wires": [
+            [
+                "a3aaeddf.9ef8b"
+            ]
+        ]
+    },
+    {
+        "id": "c5529624.f19a58",
+        "type": "ui_slider",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "BLUE",
+        "tooltip": "",
+        "group": "ecdedfc8.c867e",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "x": 670,
+        "y": 1420,
+        "wires": [
+            [
+                "7c717803.13f288"
+            ]
+        ]
+    },
+    {
+        "id": "a3aaeddf.9ef8b",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('g3',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1340,
+        "wires": [
+            [
+                "a16c993b.019d48"
+            ]
+        ]
+    },
+    {
+        "id": "de939970.f91018",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('r3',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1380,
+        "wires": [
+            [
+                "a16c993b.019d48"
+            ]
+        ]
+    },
+    {
+        "id": "7c717803.13f288",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "global.set('b3',msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 1420,
+        "wires": [
+            [
+                "a16c993b.019d48"
+            ]
+        ]
+    },
+    {
+        "id": "404c7bc6.1d4b34",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "control light3 Color",
+        "topic": "Node/light3",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1250,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "a16c993b.019d48",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "sendOBJ",
+        "func": "ST  = global.get('st3');\ng   =  global.get('g3');\nr   =  global.get('r3');\nb   =  global.get('b3');\n\nmsg.payload = {\n    st:ST,\n    G:g,\n    R:r,\n    B:b,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 1360,
+        "wires": [
+            [
+                "404c7bc6.1d4b34"
+            ]
+        ]
+    },
+    {
+        "id": "39b91fb1.f962c",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('g3');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1340,
+        "wires": [
+            [
+                "89590c1e.2b93"
+            ]
+        ]
+    },
+    {
+        "id": "75b95bdb.636904",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('r3');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1380,
+        "wires": [
+            [
+                "5e5087e8.659cf8"
+            ]
+        ]
+    },
+    {
+        "id": "7dd30864.290118",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('b3');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1420,
+        "wires": [
+            [
+                "c5529624.f19a58"
+            ]
+        ]
+    },
+    {
+        "id": "b3b72978.074698",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "getValue",
+        "func": "msg.payload = global.get('st3');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 1300,
+        "wires": [
+            [
+                "746299eb.6755f8"
+            ]
+        ]
+    },
+    {
+        "id": "4f4edec5.aa7ce",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/bri",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 110,
+        "y": 1540,
+        "wires": [
+            [
+                "3e35471b.42bd28"
+            ]
+        ]
+    },
+    {
+        "id": "3e35471b.42bd28",
+        "type": "debug",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 290,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "c58844e5.dfb458",
+        "type": "mqtt in",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "topic": "M5/Strip",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "bd6355eb.c55698",
+        "x": 120,
+        "y": 1660,
+        "wires": [
+            [
+                "8a710ffd.9c4b",
+                "8396f787.c1bcb8"
+            ]
+        ]
+    },
+    {
+        "id": "8a710ffd.9c4b",
+        "type": "debug",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 290,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "1a3e0383.0cf8fc",
+        "type": "ui_switch",
+        "z": "2dbed26e.b06b9e",
+        "name": "",
+        "label": "เปิด/ปิด",
+        "tooltip": "",
+        "group": "e81ca11.d844e6",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "fa-bullseye",
+        "oncolor": "#52FF33",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "fa-bullseye",
+        "offcolor": "#FF3333",
+        "x": 470,
+        "y": 1660,
+        "wires": [
+            [
+                "b3e864f2.aa0738"
+            ]
+        ]
+    },
+    {
+        "id": "8396f787.c1bcb8",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "STATUS",
+        "func": "msg.payload = msg.payload.st;\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 1660,
+        "wires": [
+            [
+                "1a3e0383.0cf8fc"
+            ]
+        ]
+    },
+    {
+        "id": "9f77974b.1c8c58",
+        "type": "mqtt out",
+        "z": "2dbed26e.b06b9e",
+        "name": "Strip",
+        "topic": "Node/Strip",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 850,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "b3e864f2.aa0738",
+        "type": "function",
+        "z": "2dbed26e.b06b9e",
+        "name": "create OBJ",
+        "func": "msg.payload = {st: msg.payload};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 1660,
+        "wires": [
+            [
+                "9f77974b.1c8c58"
+            ]
+        ]
+    },
+    {
+        "id": "cd63900e.5c2de",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "M5/Test",
+        "qos": "",
+        "retain": "",
+        "broker": "6a927010.30e06",
+        "x": 1300,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4ef44f63.84c35",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1060,
+        "y": 340,
+        "wires": [
+            [
+                "cd63900e.5c2de"
+            ]
+        ]
+    },
+    {
+        "id": "39034c01.fdc464",
+        "type": "inject",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "132043ab.19758c"
+            ]
+        ]
+    },
+    {
+        "id": "592d860f.77e188",
+        "type": "debug",
+        "z": "b875f491.2f05f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 300,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "99835d19.9047b",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "AIR JSON MOCK UP",
+        "topic": "",
+        "payload": "{\"st\":1,\"temp\":25}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1100,
+        "y": 440,
+        "wires": [
+            [
+                "5258093a.e4b5d8"
+            ]
+        ]
+    },
+    {
+        "id": "a1328c62.45195",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "FAN JSON MOCK UP",
+        "topic": "",
+        "payload": "{\"st\":1,\"lv\":3}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1100,
+        "y": 500,
+        "wires": [
+            [
+                "b4aa3cdd.ca7d1"
+            ]
+        ]
+    },
+    {
+        "id": "4b701ee8.3837b",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "LIGHT1 JSON MOCK UP",
+        "topic": "",
+        "payload": "{\"st\":1,\"R\":25,\"G\":25,\"B\":255}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 560,
+        "wires": [
+            [
+                "b79738a3.1364e8"
+            ]
+        ]
+    },
+    {
+        "id": "6a6a3f00.e7472",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "LIGHT2 JSON MOCK UP",
+        "topic": "",
+        "payload": "{\"st\":1,\"R\":25,\"G\":25,\"B\":255}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 600,
+        "wires": [
+            [
+                "28f77c58.6bfbb4"
+            ]
+        ]
+    },
+    {
+        "id": "884dcb53.98c588",
+        "type": "inject",
+        "z": "40e12db2.90c0f4",
+        "name": "LIGHT2 JSON MOCK UP",
+        "topic": "",
+        "payload": "{\"st\":1,\"R\":25,\"G\":25,\"B\":255}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 660,
+        "wires": [
+            [
+                "d4023096.f0758"
+            ]
+        ]
+    },
+    {
+        "id": "5258093a.e4b5d8",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "control AIR",
+        "topic": "Node/air",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1410,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b4aa3cdd.ca7d1",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "control FAN",
+        "topic": "Node/fan",
+        "qos": "2",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1410,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b79738a3.1364e8",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "control light1 Color",
+        "topic": "Node/light1",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1430,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "28f77c58.6bfbb4",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "control light2 Color",
+        "topic": "Node/light2",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1430,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d4023096.f0758",
+        "type": "mqtt out",
+        "z": "40e12db2.90c0f4",
+        "name": "control light3 Color",
+        "topic": "Node/light3",
+        "qos": "",
+        "retain": "",
+        "broker": "bd6355eb.c55698",
+        "x": 1430,
+        "y": 660,
+        "wires": []
+    }
+]
