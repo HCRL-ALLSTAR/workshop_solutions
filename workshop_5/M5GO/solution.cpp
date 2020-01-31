@@ -29,6 +29,7 @@ uint16_t light_1RGB[3];
 uint16_t light_2RGB[3];
 uint16_t light_3RGB[3];
 
+HCRL_EDU hcrl;
 int data[7] = {0, 0, 0, 0, 0, 0, 0};
 
 void setup()

@@ -6,6 +6,7 @@ float humi;
 float pressure;
 uint8_t motionStatus;
 
+HCRL_EDU hcrl;
 void setup()
 {
     Serial.begin(115200);

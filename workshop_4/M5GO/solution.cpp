@@ -29,6 +29,7 @@ uint16_t light_1RGB[3];
 uint16_t light_2RGB[3];
 uint16_t light_3RGB[3];
 
+HCRL_EDU hcrl;
 void setup()
 {
     Serial.begin(115200);

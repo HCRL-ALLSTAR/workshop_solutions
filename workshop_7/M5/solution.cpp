@@ -1,7 +1,23 @@
 #include <Arduino.h>
 #include "HCRL_EDU.h"
 
+void PubENV(const char *topic);
+void PubMOTION(const char *topic);
+void PubLight(const char *topic, uint8_t lightStatu);
+void PubAir(const char *topic);
+void PubFan(const char *topic);
+void PubStrip(const char *topic);
 void callback(char *Topic, byte *Paylaod, unsigned int Length);
+
+//define M5 Publish Topic
+#define PUB_LIGHT_1 "M5/light1"
+#define PUB_LIGHT_2 "M5/light2"
+#define PUB_LIGHT_3 "M5/light3"
+#define PUB_AIR "M5/air"
+#define PUB_FAN "M5/fan"
+#define PUB_ENV "M5/env"
+#define PUB_MOTION "M5/motion"
+#define PUB_STRIP "M5/Strip"
 
 #define SUB_LIGHT_1 "Node/light1"
 #define SUB_LIGHT_2 "Node/light2"
@@ -25,6 +41,7 @@ void callback(char *Topic, byte *Paylaod, unsigned int Length);
 #define LIGHT_2_INDEX 3
 #define LIGHT_3_INDEX 4
 
+
 float temp;
 float humi;
 float pressure;
@@ -37,8 +54,19 @@ uint8_t light_3Status;
 uint16_t light_1RGB[3];
 uint16_t light_2RGB[3];
 uint16_t light_3RGB[3];
+uint8_t airStatus;
+uint8_t airTemp;
 
+uint8_t fanStatus;
+uint8_t fanLevel;
+
+uint8_t RGB_Strip;
+
+uint8_t rgbStripStatus;
+
+millisDelay pubDelay;
 HCRL_EDU hcrl;
+
 int data[7] = {0, 0, 0, 0, 0, 0, 0};
 
 void setup()
@@ -141,6 +169,8 @@ void setup()
         set default RGB led brightness
     */
     hcrl.LED.setBrightness(10);
+
+
 }
 void loop()
 {
@@ -190,22 +220,22 @@ void loop()
     {
         data[1] = airStatus;
         data[5] = airTemp;
-        //PubAir(PUB_AIR);
+            PubAir(PUB_AIR);
     }
 
     if (data[0] != fanLevel)
     {
         data[0] = fanLevel;
-        //PubFan(PUB_FAN);
+        PubFan(PUB_FAN);
     }
     if (data[2] != light_1Status || data[3] != light_2Status || data[4] != light_3Status)
     {
         data[2] = light_1Status;
         data[3] = light_2Status;
         data[4] = light_3Status;
-        // PubLight(PUB_LIGHT_1, light_1Status);
-        // PubLight(PUB_LIGHT_2, light_2Status);
-        // PubLight(PUB_LIGHT_3, light_3Status);
+        PubLight(PUB_LIGHT_1, light_1Status);
+        PubLight(PUB_LIGHT_2, light_2Status);
+        PubLight(PUB_LIGHT_3, light_3Status);
     }
 
     hcrl.update();

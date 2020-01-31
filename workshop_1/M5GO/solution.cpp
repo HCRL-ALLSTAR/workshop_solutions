@@ -2,6 +2,7 @@
 #include "HCRL_EDU.h"
 
 uint8_t motionStatus;
+HCRL_EDU hcrl;
 void setup()
 {
     Serial.begin(115200);
