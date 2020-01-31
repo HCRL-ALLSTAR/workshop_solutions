@@ -1,0 +1,73 @@
+[
+  {
+    "id": "a6820354.29b17",
+    "type": "tab",
+    "label": "Flow 4",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "bafe3586.bb8da8",
+    "type": "lineheader",
+    "z": "a6820354.29b17",
+    "name": "",
+    "token": "",
+    "x": 530,
+    "y": 240,
+    "wires": [["5636f570.20993c", "53bc5037.d0149"]]
+  },
+  {
+    "id": "53bc5037.d0149",
+    "type": "http request",
+    "z": "a6820354.29b17",
+    "name": "",
+    "method": "POST",
+    "ret": "txt",
+    "paytoqs": false,
+    "url": "https://notify-api.line.me/api/notify",
+    "tls": "",
+    "proxy": "",
+    "authType": "",
+    "x": 730,
+    "y": 320,
+    "wires": [[]]
+  },
+  {
+    "id": "5636f570.20993c",
+    "type": "debug",
+    "z": "a6820354.29b17",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 720,
+    "y": 180,
+    "wires": []
+  },
+  {
+    "id": "3856bcfd.050e24",
+    "type": "function",
+    "z": "a6820354.29b17",
+    "name": "",
+    "func": "var payload = msg.payload.temp;\nvar maxTemp = 28;\nif (payload > maxTemp)\n{\n    msg.payload.chk = 'Warning!!! the temperature is too high.';\n}\nelse{\n    msg.payload.chk = 'Every thing is ok';\n}\nmsg.payload = msg.payload.temp+ ' Celsius ' + msg.payload.chk;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 350,
+    "y": 240,
+    "wires": [["bafe3586.bb8da8"]]
+  },
+  {
+    "id": "21679e1b.212972",
+    "type": "mqtt in",
+    "z": "a6820354.29b17",
+    "name": "",
+    "topic": "",
+    "qos": "2",
+    "datatype": "auto",
+    "x": 170,
+    "y": 240,
+    "wires": [["3856bcfd.050e24"]]
+  }
+]
